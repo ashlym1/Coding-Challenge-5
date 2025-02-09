@@ -35,3 +35,34 @@ console.log("Final Cart Items:",cartItems) // Final array Shopping complete !
 const prices= [100,200,300] // using const because the prices will not be chaging.
 const discountPrices= prices.map(price=>price-(price*0.10)); // Applying a 10 % discount 
 console.log("Discounted Prices: ",discountPrices);// Amount after discount is applied 
+
+// Task 5: Filter Method 
+let inventory= [10,15,50,90,30];// List of 5 product quantities
+let availableProduct= inventory.filter(stock=>stock>0);//  filtering  out 0 stock
+console.log(availableProduct);
+
+//Task 6- Reduce Method 
+let sales=[500,300,200,400] //Declaring an array of sales
+let totalRevenue = sales.reduce((total, sales) => total + sales,0);// Removing products that have 0 stock 
+console.log(availableProduct); //loogging the total revenue to the console
+
+//Task 7- Find() Mthods 
+let customer =["Alice","Bob","Charlie","David"];  // Array of customers 
+const foundCustomer =cutomers.find(name=>name==="Charlie"); // Finding charlie 
+console.log("Found Customer:", foundCustomer); // logging the result :)
+
+//Task 8 - Function Declaration
+function calculateTax(amount,taxRate) { 
+    return amount * taxRate
+}; 
+console.log('Calculated tax is:$${tax}');  
+
+//Task 9 : Function Expression
+ const applyDiscount= function(price,discount) { return price-price *discount};
+ console.log("Discounted Price"+ applyDiscount(80,0.15)); // discounted price, if they order $80 they get 15% off
+
+//Task 10: Arrow Functions
+ const calculatedPoints= (purchaseAmount) => {
+  let points = Math.floor (purchaseAmount /10); //  Rerturning 1 point per $10 spent 
+  console.log("Points Earned!:",calculatedPoints(80))
+ };
