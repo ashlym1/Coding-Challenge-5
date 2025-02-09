@@ -23,3 +23,10 @@ const order = {
 }; //Logged each individual so it's easier to read
 order.displayOrder();//calling the method and logging the details
 
+//Task 3: Array Manipulation
+let cartItems =["Matcha Latte", "Strawberry Pocky","pistacho Butter spread "]; // Creatting a shopping cart list
+ cartItems.push("Green Tea KitKat");// Adding a new product to the cart 
+cartItems.pop(); //Removing the last product in the cart
+cartItems.unshift("Matcha perfume ");//Adding a new iteam to the beggining of the cart
+cartItems.shift();//Removing the first item 
+console.log("Final Cart Items:",cartItems) // Final array Shopping complete !
