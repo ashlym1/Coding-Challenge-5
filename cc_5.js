@@ -30,3 +30,8 @@ cartItems.pop(); //Removing the last product in the cart
 cartItems.unshift("Matcha perfume ");//Adding a new iteam to the beggining of the cart
 cartItems.shift();//Removing the first item 
 console.log("Final Cart Items:",cartItems) // Final array Shopping complete !
+
+//Task 4- Price Adjustments 
+const prices= [100,200,300] // using const because the prices will not be chaging.
+const discountPrices= prices.map(price=>price-(price*0.10)); // Applying a 10 % discount 
+console.log("Discounted Prices: ",discountPrices);// Amount after discount is applied 
