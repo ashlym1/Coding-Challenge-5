@@ -47,22 +47,23 @@ let totalRevenue = sales.reduce((total, sale) => total + sale,0);//
 console.log(totalRevenue); //loogging the total revenue to the console
 
 //Task 7- Find() Mthods 
-let customer= ["Alice","Bob"," Charlie", "David"];  // Array of customers 
-const foundCustomer =customers.find(name=>name==="Charlie"); // Finding Charlie 
+let customers = ["Alice","Bob","Charlie", "David"];  // Array of customers 
+const foundCustomer = customers.find(name => name === "Charlie");  // Finding Charlie 
 console.log("Found Customer:", foundCustomer); // logging the result :)
 
 //Task 8 - Function Declaration
 function calculateTax(amount,taxRate) { 
     return amount * taxRate}; 
+let taxamount=calculatedTax(80,0.5)
 console.log('Calculated tax is:${tax}');  
 
 //Task 9 : Function Expression
  const applyDiscount= function(price,discount) { return price-price *discount};
- console.log("Discounted Price" + applyDiscount(80, 0.15)); // discounted price, if they order $80 they get 15% off
+ console.log("Discounted Price : " + applyDiscount(80, 0.15)); // discounted price, if they order $80 they get 15% off
 
 //Task 10: Arrow Functions
  const calculatedPoints= (purchaseAmount) => {
   let points = Math.floor(purchaseAmount /10); //  Rerturning 1 point per $10 spent 
   console.log("Points Earned!:",points ) ;
-    };
-    calculatedPoints(80); 
+calculatedPoints(80); } ; 
+    
