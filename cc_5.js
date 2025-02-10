@@ -54,8 +54,8 @@ console.log("Found Customer:", foundCustomer); // logging the result :)
 //Task 8 - Function Declaration
 function calculateTax(amount,taxRate) { 
     return amount * taxRate}; 
-let taxamount=calculatedTax(80,0.5)
-console.log('Calculated tax is:$${tax}');  
+let taxamount=calculateTax(80,0.5)
+console.log('Calculated tax is:$${taxAmount}');  
 
 //Task 9 : Function Expression
  const applyDiscount= function(price,discount) { return price-price *discount};
