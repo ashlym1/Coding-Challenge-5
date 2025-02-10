@@ -54,7 +54,7 @@ console.log("Found Customer:", foundCustomer); // logging the result :)
 //Task 8 - Function Declaration
 function calculateTax(amount,taxRate) { 
     return amount * taxRate}; 
-let taxamount=calculateTax(80,0.5);
+let taxAmount=calculateTax(80,0.5);
 console.log(`Calculated tax is:$${taxAmount}`);  
 
 //Task 9 : Function Expression
@@ -64,6 +64,6 @@ console.log(`Calculated tax is:$${taxAmount}`);
 //Task 10: Arrow Functions
  const calculatedPoints= (purchaseAmount) => {
   let points = Math.floor(purchaseAmount /10); //  Rerturning 1 point per $10 spent 
-  console.log("Points Earned!:",points ) ;
-calculatedPoints(80); } ; 
+  console.log("Points Earned!:",points ) ; };
+calculatedPoints(80);  
     
